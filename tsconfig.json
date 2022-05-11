@@ -1,12 +1,26 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es2017",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"],
+    "outDir": "./build",
+    "rootDir": "./src",
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "declaration": true,
+    "pretty": true,
+    "moduleResolution": "node",
     "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "baseUrl": "./",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
     "skipLibCheck": true,
-    "outDir": "build",
-    "rootDir": "src",
-  }
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "build", "tests"],
+  "include": ["src"]
 }
