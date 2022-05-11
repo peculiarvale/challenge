@@ -1,3 +1,5 @@
+import {ConsentsEnum} from "./consents.enum";
+
 export interface UserModel {
     id: string;
     email: string;
@@ -5,6 +7,6 @@ export interface UserModel {
 }
 
 export interface ConsentModel {
-    id: string,
+    id: ConsentsEnum,
     enabled: boolean
 }
