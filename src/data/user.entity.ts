@@ -1,5 +1,5 @@
 import {Column, Entity, PrimaryGeneratedColumn, Unique} from "typeorm";
-import {ConsentModel} from "../core/models/user.model";
+import {ConsentModel} from "../core/models/event.model";
 
 @Entity({name: "user"})
 @Unique('unique_email_constraint', ['email'])

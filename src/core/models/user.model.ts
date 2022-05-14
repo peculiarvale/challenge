@@ -1,12 +1,7 @@
-import {ConsentsEnum} from "./consents.enum";
+import {ConsentModel} from "./event.model";
 
 export interface UserModel {
     id: string;
     email: string;
     consents: ConsentModel[]
-}
-
-export interface ConsentModel {
-    id: ConsentsEnum,
-    enabled: boolean
 }
